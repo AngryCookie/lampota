@@ -1,5 +1,4 @@
 const Discord = require(`discord.js`);
-const tokens = require('./tokens.json');
 const request = require("request");
 const ms = require("ms");
 const client = new Discord.Client({disableEveryone : true});
