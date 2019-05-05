@@ -10,7 +10,7 @@ let c = '#363940'
 client.login(process.env.TOKEN); //
 ////////////////////////////////
 client.on('ready', () => {   ///
-    client.user.setActivity("порнуху в окне", {type: "WATCHING"});
+    client.user.setActivity("за твоей мамой", {type: "WATCHING"});
 console.log("Запущен!");    ////
 });                         ////
 ////////////////////////////////
@@ -28,10 +28,10 @@ if(message.content.startsWith(p + 'say')) {
     const embed = new Discord.RichEmbed()
         .setColor(c)
         .setTitle("Помощь от серГЕЯ")
-        .setDescription("Данный бот был создан для сервера LAMPOTA")
-        .addField("OTHER","`s!say` - сказать что-то от именни бота\n`s!ping` - проверить нагрузку на бота\n`s!report` [Юзер] <ПРИЧИНА> - написать репорт на человека")
-        .addField("MODER","`s!kick` [Юзер] <ПРИЧИНА> - кикнуть пользователя\n`s!ban` [Юзер] <ПРИЧИНА> - забанить пользователя\n`s!report` [Юзер] <ПРИЧИНА> - написать жалобу\n`s!server` - проверить информацию про данный сервер\n`s!mute` [Юзер] <ВРЕМЯ> - замутить пользователя")
-        .addField("FUN","s!hi [Юзер] - сказать привет человеку\ns!hi - сказать всем привет!\ns!sad - уйти в печаль\ns!angry [Юзер] - злится на человека\ns!angry - начать злится\ns!sleep - пойти спать\ns!suicide - умереть\ns!smoke - покурить сигу")
+        .setDescription("Данный бот был создан для сервера FlexHub")
+        .addField("OTHER","`s!say` - сказать что-то от именни бота\n`s!ping` - проверить нагрузку на бота\n`s!report`  - написать репорт на человека")
+        .addField("MODER","`s!kick` - кикнуть пользователя\n`s!ban` - забанить пользователя\n`s!report` - написать жалобу\n`s!server` - проверить информацию про данный сервер\n`s!mute` - замутить пользователя")
+        .addField("FUN","s!hi - сказать привет человеку\ns!hi - сказать всем привет!\ns!sad - уйти в печаль\ns!angry - злится на человека\ns!angry - начать злится\ns!sleep - пойти спать\ns!suicide - умереть\ns!smoke - покурить сигу")
         try {
             message.author.send(embed).then(m =>{
             message.channel.send("**Проверь личные сообщение**");	
